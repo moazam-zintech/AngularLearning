@@ -11,6 +11,15 @@ import { NgFor } from '@angular/common';
   providers: [DataService]
 })
 export class EInfoComponent implements OnInit{
+  
+  //There are three type f DI, 
+  /*Constocter (Most Commen in Angular Case)
+  * Parameter (Setter Injection) (There are few drawbacks because of lifecycle managemnent issue)
+   Interface Injection (Not used Directly)
+  *
+  */
+ //Here we are injecting Dependency injection inside our constructor, 
+  
   constructor(private dServise: DataService)
   {
   }
